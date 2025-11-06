@@ -56,7 +56,7 @@
     <div id="box4"></div>
     <div id="box5"></div>
     <div id="box6">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur est, voluptatem, placeat eligendi, beatae minima 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur est, voluptatem, placeat eligendi, beatae minima 
         modi ut quod voluptas numquam ex velit expedita? Ab earum aliquam Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
         Earum perspiciatis aut temporibus. Numquam officiis cumque eius, facilis est cupiditate cum veritatis odio exercitationem 
         aperiam quis corrupti nemo, quas totam obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nobis architecto 
@@ -76,17 +76,33 @@
         ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus magnam, dolores labore a cum qui impedit cupiditate sint consequuntur
          nisi tempora eligendi molestias necessitatibus officiis et nihilnam quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Porro doloribus optio hic iusto error maiores labore eos voluptatum.Exercitationem nobis odit perferendis culpa suscipit quis corporis 
-          ex a tempore deserunt!qui atque.
-
-
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, blanditiis pariatur sint veniam et quia debitis, molestiae amet neque, 
-        nam earum suscipit mollitia atque. Debitis unde exercitationem quod minima at. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Consectetur incidunt enim doloribus suscipit nisi possimus unde labore praesentium consequatur pariatur ducimus, molestias, exercitationem 
-        quasi repellat doloremque odio. Tenetur, similique libero!
-    </div>
-    <button type="button">click button</button>
+          ex a tempore deserunt!qui atque.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur est, voluptatem, placeat eligendi, beatae minima 
+        modi ut quod voluptas numquam ex velit expedita? Ab earum aliquam Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Earurepellat est, quaerat molestias illo provident, dignissimos quos. Lorem ipsum dolor sit amet, pariatur quae 
+        consectetur adipisicing elit. Nesciunt nisi quas voluptas error? Rerum quia consequuntur sit doloremque veritatis, quod voluptatem, 
+        quidem perferendis dolore, soluta voluptate. Voluptatem corporis quaerat quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Itaque quaerat aspernatur autem praesentium! Beatae magni labore, ullam ipsam sed odio eligendi soluta repellat natus obcaecati consequuntur 
+        veritatis esse totam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque ad doloribus odio quasi corrupti tenetur totam mollitia
+        dignissimos fuga optio hic voluptatem distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ullam hic 
+        possimus, maiores veritatis est distinctio quasi ad iusto error et optio perspiciatis magnam quas ab. Consequuntur, animi magni. Lorem 
+        ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus magnam, dolores labore a cum qui impedit cupiditate sint consequuntur
+         nisi tempora eligendi molestias necessitatibus officiis et nihilnam quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Porro doloribus optio hic iusto error maiores labore eos voluptatum.Exercitationem nobis odit perferendis culpa suscipit quis corporis 
+          ex a tempore deserunt!qui atque.</p>
+        </div>
+    <br>
+    <button id="mybtn" type="button">click button</button>
     <script>
-        console.log("Hello Wirld");
+        const button = document.querySelector("#mybtn");
+        const box4 = document.querySelector("#box4");
+        // python沒有變數宣告，JS變數宣告要考慮const, let
+        // const為不可做修改變數宣告(如：元件工具、觸發式機制等)，保護網頁不被亂做更改較安全
+        // let為可做修改的變數宣告
+
+        button.addEventListener("click", () => {
+            box4.innerText = "Welcome !";
+        });
 
     </script>
 </body>
